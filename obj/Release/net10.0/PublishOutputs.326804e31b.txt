@@ -1,0 +1,9 @@
+C:\app\publish\DevOpsWebApi.exe
+C:\app\publish\appsettings.Development.json
+C:\app\publish\appsettings.json
+C:\app\publish\DevOpsWebApi.dll
+C:\app\publish\DevOpsWebApi.deps.json
+C:\app\publish\DevOpsWebApi.runtimeconfig.json
+C:\app\publish\DevOpsWebApi.pdb
+C:\app\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\app\publish\Microsoft.OpenApi.dll
