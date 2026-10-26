@@ -2,27 +2,28 @@
 
 ## Construção
 
-docker build -t devops-webapi:1.0.0 .
+docker build -t devops-webapi:1.4.0 .
 
 ## Execução
 
-docker run ...
+docker compose up -d
 
 ## Staging
 
-docker run ...
+docker run -d --name devops-api-staging -p 8081:8080 -e APP_ENVIRONMENT=staging -e APP_VERSION=1.4.0 devops-webapi:1.4.0
 
 ## Production
 
-docker run ...
+docker run -d --name devops-api-prod -p 8082:8080 -e APP_ENVIRONMENT=production -e APP_VERSION=1.4.0 devops-webapi:1.4.0
 
 ## Health Check
 
-curl ...
+curl.exe -f http://localhost:8082/health     
+curl.exe -f http://localhost:8081/health     
 
 ## Nova versão
 
-docker build -t devops-webapi:1.1.0 .
+docker build -t devops-webapi:1.5.0 .
 
 ## Falha controlada
 
